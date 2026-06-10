@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.app > p {
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.movie-input {
+    width: 70%;
+    padding: 15px 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f59e0b;
+    color: #111827;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #d97706;
+}
+
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    text-align: left;
+    align-items: center;
+}
+
+.movie-poster {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #374151;
+}
+
+.movie-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.movie-info p {
+    margin-bottom: 10px;
+    color: #e5e7eb;
+    line-height: 1.5;
+}
+
+.movie-rating {
+    font-weight: bold;
+    color: #fbbf24 !important;
+}
+
+.error-message {
+    color: #f87171;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .movie-input {
+        width: 100%;
+    }
+
+    .movie-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-poster {
+        width: 200px;
+        height: 290px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}

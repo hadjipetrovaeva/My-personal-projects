@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+    <h1>Movie Search App</h1>
+    <p>Search for a movie and get information instantly.</p>
+
+    <div class="search-box">
+        <input type="text" class="movie-input" placeholder="Enter movie name...">
+        <button class="search-btn">Search</button>
+    </div>
+
+    <section class="movie-card hidden">
+        <img class="movie-poster" src="" alt="Movie poster">
+
+        <div class="movie-info">
+            <h2 class="movie-title"></h2>
+            <p class="movie-year"></p>
+            <p class="movie-genre"></p>
+            <p class="movie-rating"></p>
+            <p class="movie-plot"></p>
+        </div>
+    </section>
+
+    <p class="error-message hidden">Movie not found. Try another title.</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
